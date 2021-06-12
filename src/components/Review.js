@@ -1,13 +1,14 @@
 const Review = (props)=> {
- const data = props.contents;
+ const foods = props.foods;
+//  console.log(data);
     return(
-        <div>
-               { data.map((element) => { 
-                    <div className="items">
-                    <h3>{element.item}</h3>
-                    <p>{element.rating}</p>
-                </div>
-                } )}
+        <div className="reviews">
+               {foods.map((food)=> {
+                   return <div className="showCase">
+                       <h4>{food.item}</h4>
+                       <p className="rating">{food.rating}</p>
+                  </div>
+               })}
         </div>
     );
 }
