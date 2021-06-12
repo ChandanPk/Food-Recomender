@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from './components/Button';
+import Header from './components/Header';
+import Review from './components/Review';
+import './index.css'
+
 
 function App() {
+
+  const streetFoods = [
+    {item:"Shavarma", rating: "9/10"},
+    {item: "Manchurian", rating: "4/10"},
+    {item: "Noodles", rating: "8.2/10"}
+  ]
+
+  // const restaurentFoods = [
+  //   {item:"chiken pery pery", rating: "9/10"},
+  //   {item: "Corn soup", rating: "4/10"},
+  //   {item: "Baby corn", rating: "8.2/10"}
+  // ]
+
+  const restaurentFoods = [
+    {item:"chiken BBQ", rating: "9/10"},
+    {item: "Burger", rating: "4/10"},
+    {item: "kolkata rolls", rating: "8.2/10"}
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Button />
+      <Review contents={streetFoods} />
     </div>
   );
 }
