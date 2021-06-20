@@ -43,6 +43,7 @@ button {
     border-radius: 20px;
     border: 1px solid #d1d9d9;
     background-color: #e1e5ea;
+    border-bottom: 2px solid #e4efe7;
 }
 
 button:hover {
@@ -50,7 +51,7 @@ button:hover {
     border-radius: 0;
     background-color: #e4efe7;
     transition: 100ms;
-    border-bottom: 3px solid rgb(77, 193, 228);
+    border-bottom: 2px solid rgb(77, 193, 228);
     cursor: pointer;
 }
 
